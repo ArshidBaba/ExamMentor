@@ -1,0 +1,10 @@
+/Prep
+/heroku
+/Prep/Lib
+# /ExamPrep/quiz/migrations
+/ExamPrep/db.sqlite3
+__pycache__/
+**/__pycache__/  
+# *.pyc
+quiz/migrations
+*/_init_.py

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-# import django_heroku
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-bv8qj7-)0-&v90=3292*k()eh^$x53(u8nv-si#@_yj)-$pdq*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['qbanksy.herokuapp.com']
 
 
 # Application definition
@@ -138,3 +138,5 @@ REST_FRAMEWORK = {
 'rest_framework.permissions.IsAuthenticated',
 )
 }
+
+django_heroku.settings(locals())

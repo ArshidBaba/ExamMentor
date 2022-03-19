@@ -26,13 +26,13 @@ jobs:
 
       - save_cache:
           paths:
-            - ./venv
+            - ./Prep
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
+            . Prep/Scripts/activate
             cd ExamPrep
             python manage.py test
 

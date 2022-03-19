@@ -28,6 +28,7 @@ class CategoryDetail(APIView):
     def get(self, request, format=None, **kwargs):
         question = Questions.objects.filter(category__name=kwargs['topic']).order_by('?')
         serializer = CategoryDetailSerializer(question, many=True)
+        print("Arshid")
         return Response(serializer.data)
 
 # class AnswersList(APIView):

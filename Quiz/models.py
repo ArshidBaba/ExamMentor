@@ -1,6 +1,3 @@
-from operator import mod
-from pyexpat import model
-from unicodedata import category
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 

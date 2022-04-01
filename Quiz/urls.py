@@ -11,7 +11,7 @@ schema_view = get_schema_view(
     url="http://127.0.0.1:8000/subject",
     urlconf="ExamPrep.urls"
 )
-# dskjfjdskfh
+
 urlpatterns = [
     path("subject/", CategoryList.as_view(), name="subject_list"),
     # path("subject/<int:pk>/", CategoryDetail.as_view(), name="subject_detail"),
